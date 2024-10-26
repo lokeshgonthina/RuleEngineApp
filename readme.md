@@ -40,23 +40,26 @@ pip install Flask
 
 python app.py
 
+Enter following URL in the browser:
+
+http://127.0.0.1:5000/static/index.html
+
+
 
 ## Usage
 Create a Rule:
 
   "rule_string": "((age > 30 AND department = 'Marketing')) AND (salary > 20000 OR experience > 5)"
 
-Evaluate a Rule:
+Evaluate :
 
-{
-  "rule_id": 1,  // Replace with the actual rule ID
   "data": {
     "age": 32,
     "department": "Marketing",
     "salary": 30000,
     "experience": 7
   }
-}
+
 Check the Response:
 
 The response will include the rule_id and the evaluation result.
